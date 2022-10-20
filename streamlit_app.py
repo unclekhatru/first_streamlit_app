@@ -29,6 +29,6 @@ streamlit.text(fruityvice_response.json()) # just writes data to the screen
 
 
 #take the json version of the response and nomalize it
-fruityvice_nomalized=pandas.json.normalize(fruityvice_response.json())
+fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # Output it the screen as table
-streamlit.dataframe(fruityvice_nomalized)
+streamlit.dataframe(fruityvice_normalized)
